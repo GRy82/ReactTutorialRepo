@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TitleBar from './TitleBar/titleBar';
 import BookViewer from './BookViewer/bookViewer';
+import './app.css';
 
 class App extends Component { 
     constructor(props){
