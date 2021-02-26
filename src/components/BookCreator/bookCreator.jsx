@@ -21,7 +21,7 @@ class BookCreator extends Component {
     handleSubmit(event){
         event.preventDefault();
         const book = {
-            title: this.state.titile,
+            title: this.state.title,
             author: this.state.author
         }
         this.props.addNewBook(book);
@@ -34,10 +34,6 @@ class BookCreator extends Component {
     render() {
         return (
             <div>
-                <hr>
-                <center>
-                    <h3>Add a new book!</h3>
-                </center>
                 <form onSubmit={this.handleSubmit}>
                     <div className="row col-align"> 
                         <div className="col-md-4">

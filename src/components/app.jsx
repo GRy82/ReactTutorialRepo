@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import TitleBar from './TitleBar/titleBar';
 import BookViewer from './BookViewer/bookViewer';
 import BookCreator from './BookCreator/bookCreator';
+import Footer from './Footer/footer';
 import './app.css';
 
 class App extends Component { 
@@ -52,6 +53,7 @@ class App extends Component {
                 <BookViewer book={this.books[this.state.bookNumber]} nextBook={() => this.goToNextBook()}
                     previousBook={() => this.goToPreviousBook()}/>
                 <BookCreator addNewBook={this.addNewBook.bind(this)}/>
+                <Footer/>
             </div>
         );
     } 
